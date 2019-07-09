@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Signal" parallel="tests" >
+ 
+<listeners>
+      <listener class-name = "com.signals.testfw.report.SignalsReport" />
+   </listeners>
+    <test name="SearchTest">
+		<classes>
+			<class name="com.signals.testsuite.testcases.ExperimentTest" />
+		</classes>
+	</test>
+	
+	
+ 	
+	<test name="ExperimentTest">
+		<classes>
+			<class name="com.signals.testsuite.testcases.SearchTest" />
+		</classes>
+	</test> 
+	
+</suite>
